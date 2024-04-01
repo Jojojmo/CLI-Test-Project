@@ -2,47 +2,57 @@
 
 Este é um projeto de demonstração para uma CLI (Interface de Linha de Comando) usando Typer em Python. A CLI inclui funcionalidades básicas como saudação com nome e sobrenome, opção de exibir a versão e subcomandos para aprimoramentos futuros.
 
+## Sumário
+
+- [Material de Apoio](#material-de-apoio)
+- [Estrutura do projeto](#estrutura-do-projeto)
+- [Como instalar](#como-instalar)
+
+## Material de Apoio
+
+A seguir estará disponibilizado algumas das fontes que eu utilizei para criar este repositório:
+
+**Documentação Oficial do Typer**
+-[Typer Documentação](https://typer.tiangolo.com/)
+
+**Lives do Eduardo Mendes**
+- [Criando aplicações de linha de comando (CLIs) com Typer | Live de Python #233](https://www.youtube.com/watch?v=m1_48lmAX-Y)
+
+**Repositório Eduardo Mendes**
+-[Live 233](https://github.com/dunossauro/live-de-python/tree/main/codigo/Live233)
+
 ## Estrutura do Projeto
 
-- [cli-test.py](#cli-test.py): Arquivo principal que contém a implementação da CLI.
-- [cli-app.py](#cli-app.py): Arquivo com a estrutura para subcomandos adicionais (atualmente não implementados).
-- [notes/](#notes/): Diretório contendo anotações e informações relevantes para o projeto.
+- [cli-test.py](cli-test.py): Arquivo principal que contém a implementação da CLI.
+- [cli-app.py](cli-app.py): Arquivo com a estrutura para subcomandos adicionais (atualmente não implementados).
+- [notes/](notes/notes.md): Diretório contendo anotações e informações relevantes para o projeto.
 
-## Pré-requisitos
+## Como instalar
 
-Antes de executar a CLI, certifique-se de ter Python instalado em seu ambiente de desenvolvimento. Em seguida, instale as dependências necessárias usando o arquivo `requirements.txt`. Você pode fazer isso com o seguinte comando:
+1. **Clone o Repositório:** No terminal, use o comando `git clone` seguido do URL do repositório do GitHub:
+   ```bash
+   git clone https://github.com/Jojojmo/CLI-Test-Project.git
+   ```
 
-```bash
-pip install -r requirements.txt
-```
 
-Isso instalará todas as dependências necessárias para o projeto, incluindo o Typer.
+3. **Crie e Ative um Ambiente Virtual:**
+   ```bash
+   python -m venv .env
+   ```
+   Em seguida, ative o ambiente virtual:
+   - No Windows:
+     ```bash
+     .env\Scripts\activate
+     ```
+   - No macOS/Linux:
+     ```bash
+     source .env/bin/activate
+     ```
 
-## Como Usar
+4. **Instale as Dependências:** Use o `pip` para instalar as dependências listadas no arquivo `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-1. Clone o repositório:
-
-```bash
-git clone https://caminho/para/o/repositorio.git
-```
-
-2. Navegue até o diretório do projeto:
-
-```bash
-cd CLI-Test-Project
-```
-
-3. Instale as dependências:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Execute a CLI:
-
-```bash
-python cli-test.py --help
-```
-
-Isso exibirá as opções disponíveis para a CLI, incluindo a opção de exibir a versão e outras funcionalidades.
+Após seguir esses passos, o repositório estará instalado e suas dependências Python estarão configuradas no ambiente virtual, se você optou por utilizá-lo.
 
